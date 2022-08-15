@@ -63,10 +63,10 @@ resource "aws_security_group" "tf-sec-gr" {
       cidr_blocks = ["0.0.0.0/0"]
     }
   }
-  egress = [{
+  egress = {
     cidr_blocks = ["0.0.0.0/0"]
     from_port   = 0
     protocol    = "-1" # all ports
     to_port     = 0
-  }]
+  }
 }
