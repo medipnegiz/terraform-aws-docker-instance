@@ -70,4 +70,3 @@ resource "aws_security_group" "tf-sec-gr" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-}
