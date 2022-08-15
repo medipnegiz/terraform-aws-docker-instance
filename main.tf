@@ -31,7 +31,7 @@ data "aws_ami" "amazon-linux-2" {
 data "template_file" "userdata" {
   template = file("${abspath(path.module)}/userdata.sh") # absolute path
   vars = {
-    "server-name" = var.server-name
+    "server-name" = var.server_name
   }
 }
 
